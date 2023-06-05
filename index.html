@@ -1,440 +1,562 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		
-<title>Hexo主题-Quiet主题-Hexo扁平化主题安装-Quiet</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>键位触发测试</title>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <style>
+      :root {
+        font-size: 13px;
+      }
 
-<link rel="stylesheet" href="/css/index.css">
+      ::-moz-selection {
+        color: none;
+      }
 
+      ::selection {
+        color: none;
+      }
 
-<meta name="keywords" content="hexo主题,hexo扁平化主题,Quiet主题">
-<meta name="description" content="描述">
-
-
-<script src="/js/jquery.min.js"></script>
-
-
-<script src="/js/index.js"></script>
-
-
-<script src="/js/fancybox.umd.js"></script>
-
-
-<script src="/js/fancybox-images.js"></script>
-
-
-<script src="/js/gitalk.min.js"></script>
-
-
-<script src="/js/hljs.min.js"></script>
- 
-<script>hljs.highlightAll();</script>
-
-	<meta name="generator" content="Hexo 5.4.2"></head>
-
-	<body>
-		
-	<div class="header">
-		<div class="header-top" id="header-top">
-			<div class="h-left">
-				<a href="/">
-					<img src="/image/logo.png" alt="Quiet">
-				</a>
-			</div>
-			<div class="h-right">
-				<ul>
-					
-						
-							<li class="select">
-								<a href="/">
-									HOME
-								</a>
-								<span class="dot"></span>
-							</li>
-							
-									
-						
-								<li>
-									<a href="/archives">
-										ARCHIVE
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/categories">
-										CATEGORIES
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/tags">
-										TAGS
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/links">
-										LINKS
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
-								<li>
-									<a href="/about">
-										ABOUT
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-				</ul>
-			</div>
-			<div class="h-right-close">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-					<path fill="none" d="M0 0h24v24H0z" />
-					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div class="sidebar">
-    <div class="topo">
-        <h2>Joey</h2>
-    </div>
-    <ul>
-        
-        <li>
-            <a href="/">HOME</a>
-        </li>
-        
-        <li>
-            <a href="/archives">ARCHIVE</a>
-        </li>
-        
-        <li>
-            <a href="/categories">CATEGORIES</a>
-        </li>
-        
-        <li>
-            <a href="/tags">TAGS</a>
-        </li>
-        
-        <li>
-            <a href="/links">LINKS</a>
-        </li>
-        
-        <li>
-            <a href="/about">ABOUT</a>
-        </li>
-        
-    </ul>
-    <div class="my_foot">
-        
-        <a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
-        </a>
-        
-    </div>
-</div>
-<div class='shelter'>
-</div>
-<style>
-    .shelter{
-        background-color: #333;
-        opacity:0.5;
-        cursor: pointer;
-        display: none; 
-        position: fixed;
-        left: 0;
-        top: 0; 
-        right: 0;
-        bottom: 0;
-        z-index: 1998;
-    }
-    .sidebar {
-        width: 66%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        bottom: 0;
-        background: #fff;
-        z-index: 1999;
-        text-align: center;
-        box-shadow: -6px 0 20px rgba(98, 94, 94, .815);
-    }
-
-    .topo {
-        width: 100%;
-        height: 200px;
-        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
-        background-size: 100% 100%;
-        position: relative;
+      body {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: flex-end
-    }
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: 100vh;
+        background: rgba(251, 251, 251, 0.9);
+      }
 
-    .topo h2 {
-        color: #fff;
-        z-index: 1;
-        position: relative;
-        margin: 0 0 10px 10px;
-        font-size: 1.2em;
-        box-sizing: border-box
-    }
-
-    .topo:before {
-        content: '';
-        background-image: url(/image/pattern.png);
-        background-repeat: repeat;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 1
-    }
-
-    .sidebar ul {
-        width: 100%;
-        margin-top: 50px
-    }
-
-    .sidebar ul li {
-        height: 50px;
+      body ul {
+        padding: 0;
         list-style: none;
-        font-size: 1.2em;
-        text-align: right;
-        margin-right: 10px
-    }
+      }
 
-    .sidebar ul li a {
-        display: grid;
-        color: #5d606a;
-        text-overflow: ellipsis;
-        width: 100%;
-        text-decoration: none
-    }
+      body ul li {
+        float: left;
+      }
 
-    .my_foot {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
+      #reset {
+        display: block;
         position: absolute;
-        bottom: 0
-    }
+        top: 150px;
+        left: 100px;
+        width: 150px;
+        height: 50px;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 25px;
+        -webkit-box-shadow: 0 0 0 1px #aaa;
+        box-shadow: 0 0 0 1px #aaa;
+        cursor: pointer;
+        -webkit-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+      }
 
-    .my_foot a {
-        text-decoration: none;
-        margin-right: 10px;
-        display: inline-block
-    }
+      #reset:active {
+        background-color: rgba(51, 51, 51, 0.6);
+        color: #fdfdfd;
+      }
 
-    .my_foot a img {
-        width: 30px;
-        height: 30px
-    }
-</style>
+      #outer {
+        position: relative;
+        left: 0px;
+        width: 1730px;
+        height: 520px;
+        margin: 0 auto;
+        background-color: rgba(251, 251, 251, 0.6);
+        border-radius: 15px;
+        border: 1px rgba(51, 51, 51, 0.6) solid;
+      }
 
-<script>
-    $( function () {
-	$( '.h-right-close>svg' )
-		.click( function () {
-			$( '.sidebar' )
-				.animate( {
-					right: "0"
-				}, 500 );
-			$( '.shelter' )
-				.fadeIn( "slow" )
-		} );
-	$( '.shelter' )
-		.click( function ( e ) {
-			$( '.sidebar' )
-				.animate( {
-					right: "-100%"
-				}, 500 );
-			$( '.shelter' )
-				.fadeOut( "slow" )
-		} )
-} )
+      #outer::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: -503px;
+        left: 2px;
+        width: 1733px;
+        height: 530px;
+        border-bottom: 1px rgba(51, 51, 51, 0.6) solid;
+        border-right: 1px rgba(51, 51, 51, 0.6) solid;
+        border-radius: 13px;
+        border-top-left-radius: 17px;
+        -webkit-box-shadow: 5px 5px 30px #adadad, -5px -5px 30px #ffffff;
+        box-shadow: 5px 5px 30px #adadad, -5px -5px 30px #ffffff;
+      }
 
-</script>
+      #outer .row {
+        position: relative;
+        width: 1750px;
+        height: 60px;
+        left: 29px;
+      }
 
-<div class="home">
-	<div class="header-body-background">
-    <div class="header-body-background-content">
-        <span>
-            <img src="/image/logo.png" alt="Quiet">
-        </span>
+      #outer .row #num {
+        left: 70px;
+      }
 
-        <h2>首页这里应该有一句话，你想想写点什么？</h2>
+      #outer .row #num::after {
+        content: "Num";
+        display: inline-block;
+        position: relative;
+        top: 26px;
+        left: -10px;
+        color: gray;
+        font-size: 10px;
+      }
+
+      #outer .row #cap {
+        left: 130px;
+      }
+
+      #outer .row #cap::after {
+        content: "Caps";
+        display: inline-block;
+        position: relative;
+        top: 26px;
+        left: -10px;
+        color: gray;
+        font-size: 10px;
+      }
+
+      #outer .row #scroll {
+        left: 190px;
+      }
+
+      #outer .row #scroll::after {
+        content: "Scroll";
+        display: inline-block;
+        position: relative;
+        top: 26px;
+        left: -10px;
+        color: gray;
+        font-size: 10px;
+      }
+
+      #outer .row .light {
+        top: 18px;
+        display: inline-block;
+        position: relative;
+        width: 7px;
+        height: 25px;
+        background-color: rgba(82, 79, 79, 0.8);
+        border-radius: 2px;
+      }
+
+      #outer .row .lightActive {
+        background-color: #60ff00;
+        -webkit-box-shadow: 0 0 3px 2px #60ff00;
+        box-shadow: 0 0 3px 2px #60ff00;
+      }
+
+      #outer .row2 {
+        position: relative;
+        top: -70px;
+        left: 29px;
+        width: 1600px;
+        height: 60px;
+      }
+
+      #outer .row3 {
+        position: relative;
+        top: -67px;
+        left: 29px;
+        width: 1700px;
+        height: 70px;
+      }
+
+      #outer .row4 {
+        position: relative;
+        top: -137px;
+        left: 29px;
+        width: 1600px;
+        height: 70px;
+      }
+
+      #outer .numpadadd {
+        height: 143px;
+        line-height: 130px;
+      }
+
+      #outer .numpadadd::after {
+        height: 123px;
+      }
+
+      #outer .double {
+        padding-top: 8px;
+        line-height: 20px;
+      }
+
+      #outer .mg-top {
+        margin-top: 50px;
+      }
+
+      #outer .mg-left-1 {
+        margin-left: 76px;
+      }
+
+      #outer .mg-left-05 {
+        margin-left: 38px;
+      }
+
+      #outer .mg-left-numpad {
+        margin-left: 292px;
+      }
+
+      #outer .mg-left-arrow {
+        margin-left: 111px;
+      }
+
+      .key {
+        display: inline-block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 70px;
+        height: 70px;
+        margin-left: 3px;
+        border: 1px rgba(0, 0, 0, 0.7) solid;
+        border-radius: 4px;
+        line-height: 60px;
+        text-align: center;
+        -webkit-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+        -webkit-box-shadow: 0 0 0 1px #333;
+        box-shadow: 0 0 0 1px #333;
+      }
+
+      .key::after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 9px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 51px;
+        height: 50px;
+        border: 1px rgba(0, 0, 0, 0.5) solid;
+        border-radius: 6px;
+      }
+
+      .u125 {
+        width: 88.5px;
+      }
+
+      .u125::after {
+        width: 68.5px;
+      }
+
+      .u15 {
+        width: 105px;
+      }
+
+      .u15::after {
+        width: 85px;
+      }
+
+      .u175 {
+        width: 122.5px;
+      }
+
+      .u175::after {
+        width: 103.5px;
+      }
+
+      .u2 {
+        width: 140px;
+      }
+
+      .u2::after {
+        width: 121px;
+      }
+
+      .u225 {
+        width: 160.5px;
+      }
+
+      .u225::after {
+        width: 137.5px;
+      }
+
+      .u275 {
+        width: 195.5px;
+      }
+
+      .u275::after {
+        width: 173.5px;
+      }
+
+      .u625 {
+        width: 449px;
+      }
+
+      .u625::after {
+        width: 428px;
+      }
+
+      .active {
+        background-color: #aaa;
+        -webkit-transform: scale(0.96);
+        transform: scale(0.96);
+        -webkit-box-shadow: 0 0 0 2px #333333;
+        box-shadow: 0 0 0 2px #333333;
+      }
+
+      .actived {
+        background-color: #c1c1c1;
+        color: #fdfdfd;
+      }
+
+      .spaceActive {
+        background-color: #aaa;
+        -webkit-transform: scale(0.99, 0.99);
+        transform: scale(0.99, 0.99);
+        -webkit-box-shadow: -3px 0 0 0 rgba(0, 0, 0, 0.7),
+          3px 0 0 0 rgba(0, 0, 0, 0.7), 0 -1px 0 0 rgba(0, 0, 0, 0.7),
+          0 1px 0 0 rgba(0, 0, 0, 0.7);
+        box-shadow: -3px 0 0 0 rgba(0, 0, 0, 0.7), 3px 0 0 0 rgba(0, 0, 0, 0.7),
+          0 -1px 0 0 rgba(0, 0, 0, 0.7), 0 1px 0 0 rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="outer">
+      <div class="row" style="margin-top: 20px">
+        <ul>
+          <li><span class="key" id="Escape">ESC</span></li>
+          <li><span class="key mg-left-1" id="F1">F1</span></li>
+          <li><span class="key" id="F2">F2</span></li>
+          <li><span class="key" id="F3">F3</span></li>
+          <li><span class="key" id="F4">F4</span></li>
+          <li><span class="key mg-left-05" id="F5">F5</span></li>
+          <li><span class="key" id="F6">F6</span></li>
+          <li><span class="key" id="F7">F7</span></li>
+          <li><span class="key" id="F8">F8</span></li>
+          <li><span class="key mg-left-05" id="F9">F9</span></li>
+          <li><span class="key" id="F10">F10</span></li>
+          <li><span class="key" id="F11">F11</span></li>
+          <li><span class="key" id="F12">F12</span></li>
+          <li><span class="key mg-left-05" id="PrintScreen">PS</span></li>
+          <li><span class="key" id="ScrollLock">SL</span></li>
+          <li><span class="key" id="Pause">PA</span></li>
+        </ul>
+        <span class="light" id="num"></span>
+        <span class="light" id="cap"></span>
+        <span class="light" id="scroll"></span>
+      </div>
+      <div class="row mg-top">
+        <ul>
+          <li>
+            <span class="key double" id="Backquote">~<br />`</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit1">!<br />1</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit2">@<br />2</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit3">#<br />3</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit4">$<br />4</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit5">%<br />5</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit6">^<br />6</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit7">&<br />7</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit8">*<br />8</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit9">(<br />9</span>
+          </li>
+          <li>
+            <span class="key double" id="Digit0">)<br />0</span>
+          </li>
+          <li>
+            <span class="key double" id="Minus">_<br />-</span>
+          </li>
+          <li>
+            <span class="key double" id="Equal">+<br />=</span>
+          </li>
+          <li><span class="key u2" id="Backspace">BACKSPACE</span></li>
+          <li><span class="key mg-left-05" id="Insert">INS</span></li>
+          <li><span class="key" id="Home">HOME</span></li>
+          <li>
+            <span class="key double" id="PageUp">PAGE<br />UP</span>
+          </li>
+          <li>
+            <span class="key double mg-left-05" id="NumLock"
+              >NUM<br />LOCK</span
+            >
+          </li>
+          <li><span class="key" id="NumpadDivide">/</span></li>
+          <li><span class="key" id="NumpadMultiply">*</span></li>
+          <li><span class="key" id="NumpadSubtract">-</span></li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul>
+          <li><span class="key u15" id="Tab">TAB</span></li>
+          <li><span class="key" id="KeyQ">Q</span></li>
+          <li><span class="key" id="KeyW">W</span></li>
+          <li><span class="key" id="KeyE">E</span></li>
+          <li><span class="key" id="KeyR">R</span></li>
+          <li><span class="key" id="KeyT">T</span></li>
+          <li><span class="key" id="KeyY">Y</span></li>
+          <li><span class="key" id="KeyU">U</span></li>
+          <li><span class="key" id="KeyI">I</span></li>
+          <li><span class="key" id="KeyO">O</span></li>
+          <li><span class="key" id="KeyP">P</span></li>
+          <li>
+            <span class="key double" id="BracketLeft">{<br />[</span>
+          </li>
+          <li>
+            <span class="key double" id="BracketRight">}<br />]</span>
+          </li>
+          <li>
+            <span class="key double u15" id="Backslash">|<br />\</span>
+          </li>
+          <li><span class="key mg-left-05" id="Delete">DEL</span></li>
+          <li><span class="key" id="End">END</span></li>
+          <li>
+            <span class="key double" id="PageDown">PAGE<br />DOWN</span>
+          </li>
+          <li><span class="key mg-left-05" id="Numpad7">7</span></li>
+          <li><span class="key" id="Numpad8">8</span></li>
+          <li><span class="key" id="Numpad9">9</span></li>
+          <li><span class="key numpadadd" id="NumpadAdd">+</span></li>
+        </ul>
+      </div>
+      <div class="row2">
+        <ul>
+          <li><span class="key u175" id="CapsLock">CAPSLOCK</span></li>
+          <li><span class="key" id="KeyA">A</span></li>
+          <li><span class="key" id="KeyS">S</span></li>
+          <li><span class="key" id="KeyD">D</span></li>
+          <li><span class="key" id="KeyF">F</span></li>
+          <li><span class="key" id="KeyG">G</span></li>
+          <li><span class="key" id="KeyH">H</span></li>
+          <li><span class="key" id="KeyJ">J</span></li>
+          <li><span class="key" id="KeyK">K</span></li>
+          <li><span class="key" id="KeyL">L</span></li>
+          <li>
+            <span class="key double" id="Semicolon">:<br />;</span>
+          </li>
+          <li>
+            <span class="key double" id="Quote">"<br />'</span>
+          </li>
+          <li><span class="key u225" id="Enter">ENTER</span></li>
+          <li><span class="key mg-left-numpad" id="Numpad4">4</span></li>
+          <li><span class="key" id="Numpad5">5</span></li>
+          <li><span class="key" id="Numpad6">6</span></li>
+        </ul>
+      </div>
+      <div class="row3">
+        <ul>
+          <li><span class="key u225" id="ShiftLeft">SHIFT</span></li>
+          <li><span class="key" id="KeyZ">Z</span></li>
+          <li><span class="key" id="KeyX">X</span></li>
+          <li><span class="key" id="KeyC">C</span></li>
+          <li><span class="key" id="KeyV">V</span></li>
+          <li><span class="key" id="KeyB">B</span></li>
+          <li><span class="key" id="KeyN">N</span></li>
+          <li><span class="key" id="KeyM">M</span></li>
+          <li><span class="key" id="Comma"><,</span></li>
+          <li><span class="key" id="Period">>.</span></li>
+          <li><span class="key" id="Slash">?/</span></li>
+          <li><span class="key u275" id="ShiftRight">SHIFT</span></li>
+          <li><span class="key mg-left-arrow" id="ArrowUp">↑</span></li>
+          <li><span class="key mg-left-arrow" id="Numpad1">1</span></li>
+          <li><span class="key" id="Numpad2">2</span></li>
+          <li><span class="key" id="Numpad3">3</span></li>
+          <li><span class="key numpadadd" id="NumpadEnter">ENTER</span></li>
+        </ul>
+      </div>
+      <div class="row4">
+        <ul>
+          <li><span class="key u125" id="ControlLeft">CTRL</span></li>
+          <li><span class="key u125" id="MetaLeft">WIN</span></li>
+          <li><span class="key u125" id="AltLeft">ALT</span></li>
+          <li><span class="key u625" id="Space"></span></li>
+          <li><span class="key u125" id="AltRight">ALT</span></li>
+          <li><span class="key u125">FN</span></li>
+          <li><span class="key u125" id="ContextMenu">MENU</span></li>
+          <li><span class="key u125" id="ControlRight">CTRL</span></li>
+          <li><span class="key mg-left-05" id="ArrowLeft">←</span></li>
+          <li><span class="key" id="ArrowDown">↓</span></li>
+          <li><span class="key" id="ArrowRight">→</span></li>
+          <li><span class="key mg-left-05 u2" id="Numpad0">0</span></li>
+          <li><span class="key" id="NumpadDecimal">.</span></li>
+        </ul>
+      </div>
     </div>
-</div>
-	<div class="main">
-		
-			<div class="post-card" id="content">
-				
-					<div class="post-card-display">
-						<a href="/2023/02/10/hello-world/">
-							<h2 class="post-card-title">
-								Hello World
-							</h2>
-							
-								<img src="https://api.ixiaowai.cn/gqapi/gqapi.php" alt="Quiet">
-							
-						</a>
-						<div class="post-card-meat">
-							<div class="meat-info">
-								<div class="info-auth">
-										<a href="">
-											Joey
-										</a>
-								</div>
-								<div class="info-data">
-									2023-02-10
-								</div>
-							</div>
-							<div class="meat-type"></div>
-						</div>
-					</div>
-				
-			</div>
-		
-		
-	
-	</div>
-	<div class="change-page">
-		
-				
-	</div>
-	
-</div>
-		
-<div class="footer">
-	<div class="Copyright">
-		©2023 By Joey. 主题：<a
-			style="text-decoration: none;display: contents; color: #898F9F;"
-			target="_blank" rel="noopener" href="https://github.com/79e/hexo-theme-quiet">Quiet</a>
-	</div>
-	<div class="contact">
-		
-		<a target="_blank" rel="noopener" href="https://github.com/79E/hexo-theme-quiet">
-			<img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imggithub.png" alt="Quiet主题">
-		</a>
-		
-	</div>
-</div>
-
-<script src="/js/gotop.js"></script>
-
-
-<style type="text/css">
-    @media screen and (min-width: 600px) {
-        .goTop>span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            opacity: 0.8;
-            background: rgba(18, 24, 58, 0.06);
-            text-align: center;
-            transition: border .5s;
-            border: 1px solid rgba(18, 24, 58, 0.06);
-
-            -moz-transition: border .5s;
-            /* Firefox 4 */
-            -webkit-transition: border .5s;
-            /* Safari 和 Chrome */
-            -o-transition: border .5s;
-            /* Opera */
-        }
-
-        .goTop>span:hover {
-            border: 1px solid #6680B3;
-        }
-
-
-        .goTop {
-            position: fixed;
-            right: 30px;
-            bottom: 80px;
-        }
-
-        .goTop>span>svg {
-            width: 20px;
-            height: 20px;
-            opacity: 0.7;
-        }
-
-    }
-
-    @media screen and (max-width: 600px) {
-        .goTop {
-            display: none;
-        }
-    }
-</style>
-<div class="goTop" id="js-go_top">
-    <span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <g>
-                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
-            </g>
-        </svg>
-    </span>
-</div>
-<script>
-    $( '#js-go_top' )
-	.gotoTop( {
-		offset: 500,
-		speed: 300,
-		animationShow: {
-			'transform': 'translate(0,0)',
-			'transition': 'transform .5s ease-in-out'
-		},
-		animationHide: {
-			'transform': 'translate(100px,0)',
-			'transition': 'transform .5s ease-in-out'
-		}
-	} );
-</script>
-
-
-    <!-- Gitalk -->
+    <button id="reset">重置</button>
+    <!-- <script src="/script.js"></script> -->
+    <!-- <script src="https://unpkg.com/spacingjs" defer></script> -->
     <script>
-        const data = '{"clientID":"02b3c","clientSecret":"adfc7b4","repo":"gimment","owner":"duneng","admin":"duneng"}'
-        const gitalk = new Gitalk({
-            ...JSON.parse( data),
-            id:location.pathname,
-            distractionFreeMode:false
-        })
-        
-        if(Boolean('')){
-            gitalk.render('gitalk-container')
+      document.onkeydown = function (e) {
+        if (e.keyCode == 32) {
+          // document.getElementById(e.code).classList.remove('actived')
+          document.getElementById(e.code).classList.add("spaceActive");
+        } else if (e.keyCode == 20) {
+          document.getElementById("cap").classList.toggle("lightActive");
+        } else if (e.keyCode == 145) {
+          document.getElementById("scroll").classList.toggle("lightActive");
+        } else if (e.keyCode == 144) {
+          document.getElementById("num").classList.toggle("lightActive");
+        } else {
         }
+        document.getElementById(e.code).classList.remove("actived");
+        document.getElementById(e.code).classList.add("active");
+        // console.log(e.code);
+        // console.log(e.keyCode);!
+        console.log(e.code, e.type);
+      };
+      document.onkeyup = function (e) {
+        document.getElementById(e.code).classList.remove("active");
+        document.getElementById(e.code).classList.remove("spaceActive");
+        document.getElementById(e.code).classList.add("actived");
+        console.log(e.code, e.type);
+      };
+      document.onkeypress = function (e) {
+        document.getElementById(e.code).classList.remove("active");
+        document.getElementById(e.code).classList.remove("spaceActive");
+        document.getElementById(e.code).classList.add("actived");
+        console.log(e.code, e.type);
+      };
+      // 屏蔽浏览器快捷键->禁止浏览器的默认事件
+      document.body.onkeydown = function (event) {
+        var e = window.event || event;
+        if (e.preventDefault) {
+          e.preventDefault();
+        } else {
+          window.event.returnValue = false;
+        }
+      };
+      // 重置触发
+      let reset = document.getElementById("reset");
+      let key = document.querySelectorAll(".key");
+      reset.onclick = function () {
+        for (let i = 0; i < key.length; i++) {
+          key[i].classList.remove("actived");
+        }
+      };
     </script>
-
-<script>
-	console.log('\n %c Hexo-Quiet 主题 %c https://github.com/79e/hexo-theme-quiet \n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;')
-</script>
-	</body>
+  </body>
 </html>
-

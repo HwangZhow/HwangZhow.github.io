@@ -526,19 +526,19 @@
         document.getElementById(e.code).classList.add("active");
         // console.log(e.code);
         // console.log(e.keyCode);!
-        console.log(e.code, e.type);
+        console.log(e.code);
       };
       document.onkeyup = function (e) {
         document.getElementById(e.code).classList.remove("active");
         document.getElementById(e.code).classList.remove("spaceActive");
         document.getElementById(e.code).classList.add("actived");
-        console.log(e.code, e.type);
+        // console.log(e.code, e.type);
       };
       document.onkeypress = function (e) {
         document.getElementById(e.code).classList.remove("active");
         document.getElementById(e.code).classList.remove("spaceActive");
         document.getElementById(e.code).classList.add("actived");
-        console.log(e.code, e.type);
+        // console.log(e.code, e.type);
       };
       // 屏蔽浏览器快捷键->禁止浏览器的默认事件
       document.body.onkeydown = function (event) {
